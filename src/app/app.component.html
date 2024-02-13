@@ -1,27 +1,29 @@
-<div class="container p-10" >
-  <div class="w-[600px] items-center grid grid-cols-1 text-4xl  gap-4 min-h-20 border border-gray-400 rounded-lg mx-auto">
-    <h2> {{ inputText }}</h2>
-  </div>
-  <div class="w-[600px]  grid grid-cols-4 gap-4 min-h-12 mx-auto mt-7">
-    <button (click)="button('%')" class="border-t-neutral-500 w-full rounded-xl bg-slate-200 hover:bg-slate-500 text-black p-8" >X2</button>
-    <button (click)="button('CE')" class="border-t-neutral-500 w-full rounded-xl bg-slate-200 hover:bg-slate-500 text-black p-8" >CE</button>
-    <button (click)="button('C')" class="border-t-neutral-500 rounded-xl w-full bg-slate-200 hover:bg-slate-500 text-black p-8" >C</button>
-    <button (click)="button('Del')" class="border-t-neutral-500 rounded-xl w-full bg-slate-200 hover:bg-slate-500 text-black p-8" >Del</button>
-    <button (click)="button('1')" class="border-t-neutral-500 w-full rounded-xl bg-slate-200 hover:bg-slate-500 text-black p-8" >1</button>
-    <button (click)="button('2')" class="border-t-neutral-500 w-full rounded-xl bg-slate-200 hover:bg-slate-500 text-black p-8" >2</button>
-    <button (click)="button('3')" class="border-t-neutral-500 rounded-xl w-full bg-slate-200 hover:bg-slate-500 text-black p-8" >3</button>
-    <button (click)="button('4')" class="border-t-neutral-500 rounded-xl w-full bg-slate-200 hover:bg-slate-500 text-black p-8" >X</button>
-    <button (click)="button('4')" class="border-t-neutral-500 rounded-xl w-full bg-slate-200 hover:bg-slate-500 text-black p-8" >4</button>
-    <button (click)="button('5')" class="border-t-neutral-500 rounded-xl w-full bg-slate-200 hover:bg-slate-500 text-black p-8" >5</button>
-    <button (click)="button('6')" class="border-t-neutral-500 rounded-xl w-full bg-slate-200 hover:bg-slate-500 text-black p-8" >6</button>
-    <button (click)="button('-')" class="border-t-neutral-500 rounded-xl w-full bg-slate-200 hover:bg-slate-500 text-black p-8" >-</button>
-    <button (click)="button('7')" class="border-t-neutral-500 rounded-xl w-full bg-slate-200 hover:bg-slate-500 text-black p-8" >7</button>
-    <button (click)="button('8')" class="border-t-neutral-500 rounded-xl w-full bg-slate-200 hover:bg-slate-500 text-black p-8" >8</button>
-    <button (click)="button('9')" class="border-t-neutral-500 rounded-xl w-full bg-slate-200 hover:bg-slate-500 text-black p-8" >9</button>
-    <button (click)="button('+')" class="border-t-neutral-500 rounded-xl w-full bg-slate-200 hover:bg-slate-500 text-black p-8" >+</button>
-    <button (click)="button('/')" class="border-t-neutral-500 rounded-xl w-full bg-slate-200 hover:bg-slate-500 text-black p-8" >/</button>
-    <button (click)="button('0')" class="border-t-neutral-500 rounded-xl w-full bg-slate-200 hover:bg-slate-500 text-black p-8" >0</button>
-    <button (click)="button('0')" class="border-t-neutral-500 rounded-xl w-full bg-slate-200 hover:bg-slate-500 text-black p-8" >.</button>
-    <button (click)="button('=')" class="border-t-neutral-500 rounded-xl w-full bg-slate-200 hover:bg-slate-500 text-black p-8" >=</button>
-  </div>
-</div>
+  <section class="flex justify-center mt-20">
+    <div class="w-[720px] p-10 bg-black rounded-lg" >
+      <div class="w-[600px] items-center grid grid-cols-1 text-4xl  gap-4 min-h-20 border border-gray-700 bg-slate-600 text-white rounded-lg mx-auto">
+        <h2 class="text-right"> {{ inputText }}</h2>
+      </div>
+      <div class="w-[600px]  grid grid-cols-4 gap-4 min-h-12 mx-auto mt-7">
+        <button (click)="button('**')" class="border-t-neutral-500 w-full rounded-xl bg-slate-700 hover:bg-slate-500 text-white p-8" >Exp</button>
+        <button (click)="button('CE')" class="border-t-neutral-500 w-full rounded-xl bg-slate-700 hover:bg-slate-500 text-white p-8" >CE</button>
+        <button (click)="button('C')" class="border-t-neutral-500 rounded-xl w-full bg-slate-700 hover:bg-slate-500 text-white p-8" >C</button>
+        <button (click)="button('Del')" class="border-t-neutral-500 rounded-xl w-full bg-slate-700 hover:bg-slate-500 text-white p-8" >Del</button>
+        <button (click)="button('1')" class="border-t-neutral-500 w-full rounded-xl bg-slate-700 hover:bg-slate-500 text-white p-8" >1</button>
+        <button (click)="button('2')" class="border-t-neutral-500 w-full rounded-xl bg-slate-700 hover:bg-slate-500 text-white p-8" >2</button>
+        <button (click)="button('3')" class="border-t-neutral-500 rounded-xl w-full bg-slate-700 hover:bg-slate-500 text-white p-8" >3</button>
+        <button (click)="button('*')" class="border-t-neutral-500 rounded-xl w-full bg-slate-700 hover:bg-slate-500 text-white p-8" >X</button>
+        <button (click)="button('4')" class="border-t-neutral-500 rounded-xl w-full bg-slate-700 hover:bg-slate-500 text-white p-8" >4</button>
+        <button (click)="button('5')" class="border-t-neutral-500 rounded-xl w-full bg-slate-700 hover:bg-slate-500 text-white p-8" >5</button>
+        <button (click)="button('6')" class="border-t-neutral-500 rounded-xl w-full bg-slate-700 hover:bg-slate-500 text-white p-8" >6</button>
+        <button (click)="button('-')" class="border-t-neutral-500 rounded-xl w-full bg-slate-700 hover:bg-slate-500 text-white p-8" >-</button>
+        <button (click)="button('7')" class="border-t-neutral-500 rounded-xl w-full bg-slate-700 hover:bg-slate-500 text-white p-8" >7</button>
+        <button (click)="button('8')" class="border-t-neutral-500 rounded-xl w-full bg-slate-700 hover:bg-slate-500 text-white p-8" >8</button>
+        <button (click)="button('9')" class="border-t-neutral-500 rounded-xl w-full bg-slate-700 hover:bg-slate-500 text-white p-8" >9</button>
+        <button (click)="button('+')" class="border-t-neutral-500 rounded-xl w-full bg-slate-700 hover:bg-slate-500 text-white p-8" >+</button>
+        <button (click)="button('/')" class="border-t-neutral-500 rounded-xl w-full bg-slate-700 hover:bg-slate-500 text-white p-8" >/</button>
+        <button (click)="button('0')" class="border-t-neutral-500 rounded-xl w-full bg-slate-700 hover:bg-slate-500 text-white p-8" >0</button>
+        <button (click)="button('0')" class="border-t-neutral-500 rounded-xl w-full bg-slate-700 hover:bg-slate-500 text-white p-8" >.</button>
+        <button (click)="resultado('=')" class="border-t-neutral-500 rounded-xl w-full bg-slate-700 hover:bg-slate-500 text-white p-8" >=</button>
+      </div>
+    </div>
+  </section>

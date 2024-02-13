@@ -10,6 +10,7 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   inputText = '';
+  
 
   button(btn: String): void {
     if (btn === 'Del') {
@@ -20,4 +21,10 @@ export class AppComponent {
       this.inputText += btn
     }
   }
+
+  resultado(btn: String) {
+    if (btn === '=') {
+    this.inputText = (this.resultado, eval(this.inputText))
+    }
+  } 
 }
