@@ -9,5 +9,15 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'calculadora';
+  inputText = '';
+
+  button(btn: String): void {
+    if (btn === 'Del') {
+      this.inputText = this.inputText.substring(0, this.inputText.length - 1)
+    } else if (btn === 'C' || btn === 'CE') {
+      this.inputText = ''
+    } else {
+      this.inputText += btn
+    }
+  }
 }
