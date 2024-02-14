@@ -29,7 +29,6 @@ export class AppComponent {
 
   resultado(btn: String) {
     if (btn === '=')
-    debugger
     {
     this.inputText = (this.resultado, eval(this.inputText)); 
     }
