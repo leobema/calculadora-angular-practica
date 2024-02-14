@@ -10,12 +10,14 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  inputText = '';
+  inputText: string = '';
+  
 
   constructor(){
       
   }
 
+ 
 
   button(btn: String): void {
     if (btn === 'Del') {
@@ -30,9 +32,12 @@ export class AppComponent {
   resultado(btn: String) {
     if (btn === '=')
     {
-    this.inputText = (this.resultado, eval(this.inputText)); 
+    this.inputText = (0, eval)(this.inputText);
+    this.inputText 
     }
-  } 
+  }  
+
+ 
 
   consition2(){
     if (
@@ -46,41 +51,18 @@ export class AppComponent {
   }
    }
 
-   condition(){
-    const hola = this.inputText.slice(this.inputText.length -2)
-    if ( 
-      hola === '**' || 
-      hola === '++' || 
-      hola === '--' || 
-      hola === '..' || 
-      hola === '//' ||
-      hola === '.*' ||
-      hola === './' ||
-      hola === '.+' ||
-      hola === '.-' ||
-      hola === '*.' ||
-      hola === '*+' ||
-      hola === '*-' ||
-      hola === '*/' ||
-      hola === '+.' ||
-      hola === '+/' ||
-      hola === '+-' ||
-      hola === '-.' ||
-      hola === '-*' ||
-      hola === '-+' || 
-      hola === '-/' || 
-      hola === './' ||
-      hola === '+*' ||
-      hola === '/.' ||
-      hola === '/+' ||
-      hola === '/-' ||
-      hola === '/*'
-      ){
-    this.button('Del');
-    } 
-  } 
+  condition() {
+    if (typeof this.inputText === 'string') {
+      const hola = this.inputText.slice(-2);
+  
+    const patrones = ['**', '++', '--', '..', '//', '.*', './', '.+', '.-', '*.', '*+', '*-', '*/', '+.', '+/', '+-', '-.', '-*', '-+', '-/', './', '+*', '/.', '/+', '/-', '/*'];
+  
+    if (patrones.includes(hola)) {
+      this.button('Del');
+    }
+  }
 
      
-  
+}
 
 }
