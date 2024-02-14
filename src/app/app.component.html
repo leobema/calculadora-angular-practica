@@ -1,10 +1,12 @@
-  <section class="flex justify-center mt-20">
-    <div class="w-[720px] p-10 bg-black rounded-lg" >
+
+<section class="flex justify-center mt-20">    
+  <p>{{condition()}} {{consition2()}}</p>  
+  <div class="w-[720px] p-10 bg-black rounded-lg" >
       <div class="w-[600px] items-center grid grid-cols-1 text-4xl  gap-4 min-h-20 border border-gray-700 bg-slate-600 text-white rounded-lg mx-auto">
-        <h2 class="text-right"> {{ inputText }}</h2>
+        <h2 class="text-right mr-5"> {{ inputText }}</h2>
       </div>
       <div class="w-[600px]  grid grid-cols-4 gap-4 min-h-12 mx-auto mt-7">
-        <button (click)="button('**')" class="border-t-neutral-500 w-full rounded-xl bg-slate-700 hover:bg-slate-500 text-white p-8" >Exp</button>
+        <button (click)="button('')" class="border-t-neutral-500 w-full rounded-xl bg-slate-700 hover:bg-slate-500 text-white p-8" >Exp</button>
         <button (click)="button('CE')" class="border-t-neutral-500 w-full rounded-xl bg-slate-700 hover:bg-slate-500 text-white p-8" >CE</button>
         <button (click)="button('C')" class="border-t-neutral-500 rounded-xl w-full bg-slate-700 hover:bg-slate-500 text-white p-8" >C</button>
         <button (click)="button('Del')" class="border-t-neutral-500 rounded-xl w-full bg-slate-700 hover:bg-slate-500 text-white p-8" >Del</button>
